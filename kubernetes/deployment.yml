@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ticketIssuance
+  name: ticketissuance
   labels:
-    app: ticketIssuance
+    app: ticketissuance
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ticketIssuance
+      app: ticketissuance
   template:
     metadata:
       labels:
-        app: ticketIssuance
+        app: ticketissuance
     spec:
       containers:
-        - name: ticketIssuance
-          image: 271153858532.dkr.ecr.ap-northeast-2.amazonaws.com/ticketIssuance:latest
+        - name: ticketissuance
+          image: 271153858532.dkr.ecr.ap-northeast-2.amazonaws.com/ticketissuance:latest
           ports:
             - containerPort: 8080
           readinessProbe:
